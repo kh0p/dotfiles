@@ -1,11 +1,9 @@
 [global_config]
-  handle_size = -3
   focus = mouse
   title_transmit_fg_color = "#000000"
   title_receive_bg_color = "#000000"
   title_transmit_bg_color = "#000000"
   title_receive_fg_color = "#000000"
-  tab_position = bottom
   title_inactive_bg_color = "#000000"
 [keybindings]
   zoom_out = <Primary><Super>o
@@ -13,6 +11,23 @@
   zoom_in = <Primary><Super>i
 [profiles]
   [[default]]
+    palette = "#090909:#c61538:#38c615:#c6a315:#1538c6:#a315c6:#15c6a3:#d8d8d8:#6e6e6e:#f5a5b5:#b5f5a5:#f5e5a5:#a5b5f5:#e5a5f5:#a5f5e5:#e4e4e4"
+    background_darkness = 0.86
+    background_type = transparent
+    use_system_font = False
+    cursor_color = "#59d027"
+    foreground_color = "#e2ff85"
+    icon_bell = False
+    show_titlebar = False
+    font = Monospace 9
+    background_color = "#0b1e1e"
+  [[4bit-1365703560893]]
+    background_color = "#d9fea2"
+    palette = "#5a5a5a:#cc9c6c:#6ccc9c:#9ccc6c:#9c6ccc:#cc6c9c:#6c9ccc:#bfbfbf:#626262:#ccb196:#96ccb1:#b1cc96:#b196cc:#cc96b1:#96b1cc:#cccccc"
+    foreground_color = "#011301"
+    background_type = transparent
+    background_darkness = 0.38
+  [[4bit-1369410046222]]
     palette = "#15212e:#cf5a00:#00cf5a:#75cf00:#5a00cf:#cf0075:#0075cf:#c6d2df:#596572:#ffffff:#ffffff:#ffffff:#ffffff:#ffffff:#ffffff:#d1ddea"
     background_darkness = 0.88
     background_type = transparent
@@ -23,12 +38,6 @@
     show_titlebar = False
     font = Monospace 9
     background_color = "#06101c"
-  [[4bit-1365703560893]]
-    background_color = "#d9fea2"
-    palette = "#5a5a5a:#cc9c6c:#6ccc9c:#9ccc6c:#9c6ccc:#cc6c9c:#6c9ccc:#bfbfbf:#626262:#ccb196:#96ccb1:#b1cc96:#b196cc:#cc96b1:#96b1cc:#cccccc"
-    foreground_color = "#011301"
-    background_type = transparent
-    background_darkness = 0.38
   [[4bit-1365702685019]]
     background_darkness = 0.66
     background_type = transparent
