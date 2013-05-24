@@ -1,0 +1,73 @@
+################ STUFF... ################################################################################
+##   This .conkyrc is designed for 1024x768 resolution, so you may have to tweak it with other resolutions.
+##   Save this file as .conkyrc in your home folder.
+##   Font used ProFontWindows and can be found from http://www.dafont.com/secret-code.font
+##   Green and grey blocks that are used in the desktop thing, save them in place you want and change the paths.
+##
+##   Weather:
+##   conky_rss.sh is modded version of this script:
+##   http://ubuntuforums.org/showpost.php?p=6993782&postcount=6354
+##   Remember to make it excutable.
+##   Feeds are from http://www.rssweather.com, choose your location and add the right rss feed
+##   in conky_weather file like this:
+##   ${execi 3600 ~/bin/conky/conky_rss.sh "http://www.rssweather.com/bin/conky/rss.php" 1 1 }
+##   change also the path to where you have saved your conky_rss.sh file.
+
+
+background yes
+
+use_xft yes
+xftfont LiberationMono:size=9
+xftalpha 1
+update_interval 1
+
+
+total_run_times 0
+
+    own_window yes
+    own_window_transparent no
+    own_window_type normal
+    own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+    #own_window_argb_visual yes
+    double_buffer yes
+	no_buffers yes
+#text_buffer_size 1920
+#minimum_size 100 1200
+minimum_size 1920 5
+maximum_width 1080 
+
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders no
+stippled_borders 0
+border_inner_margin 2
+border_width 0
+
+default_color EE4772
+#default_color 1693A5
+default_shade_color 2D2D2D
+default_outline_color white
+own_window_colour 222222
+
+alignment top_left
+#alignment top_right
+#alignment bottom_left
+#alignment bottom_right
+#alignment bottom_middle
+#alignment none
+
+gap_x 415
+gap_y 15
+
+no_buffers yes
+
+uppercase no
+
+cpu_avg_samples 2
+
+override_utf8_locale yes
+
+
+TEXT
+${color e2e2e2}Uptime:${color} ${uptime_short}${color} ${color e2e2e2}Storage: ${color}${fs_used /home} / ${fs_size /home} ${fs_used_perc /home}% ${color e2e2e2} CPU: ${color}${cpu cpu1}% @ ${hwmon temp 1}°C ${color e2e2e2} Mem: ${color}${font}${mem} / ${memmax}  ${memperc}%   ${alignr}${color e2e2e2}${wireless_essid wlan0}${color} ${wireless_link_qual_perc wlan0}% -- ${gw_ip} ${color e2e2e2} Local IP: ${color}${addr wlan0} ${color e2e2e2} External IP: ${color}${execi 600 wget -q -O - checkip.dyndns.org | sed -e 's/[^[:digit:]\|.]//g'}  
