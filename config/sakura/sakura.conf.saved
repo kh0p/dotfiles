@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE abiword PUBLIC "-//ABISOURCE//DTD AWML 1.0 Strict//EN" "http://www.abisource.com/awml.dtd">
+<abiword template="false" xmlns:ct="http://www.abisource.com/changetracking.dtd" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:math="http://www.w3.org/1998/Math/MathML" xid-max="39" xmlns:dc="http://purl.org/dc/elements/1.1/" fileformat="1.1" xmlns:svg="http://www.w3.org/2000/svg" xmlns:awml="http://www.abisource.com/awml.dtd" xmlns="http://www.abisource.com/awml.dtd" xmlns:xlink="http://www.w3.org/1999/xlink" version="2.9.2" xml:space="preserve" props="dom-dir:ltr; document-footnote-restart-section:0; document-endnote-type:numeric; document-endnote-place-enddoc:1; document-endnote-initial:1; lang:pl-PL; document-endnote-restart-section:0; document-footnote-restart-page:0; document-footnote-type:numeric; document-footnote-initial:1; document-endnote-place-endsection:0">
+<!-- ======================================================================== -->
+<!-- This file is an AbiWord document.                                        -->
+<!-- AbiWord is a free, Open Source word processor.                           -->
+<!-- More information about AbiWord is available at http://www.abisource.com/ -->
+<!-- You should not edit this file by hand.                                   -->
+<!-- ======================================================================== -->
+
+<metadata>
+<m key="abiword.generator">AbiWord</m>
+<m key="dc.format">application/x-abiword</m>
+</metadata>
+<rdf>
+</rdf>
+<styles>
+<s type="P" name="Normal" basedon="" followedby="Current Settings" props="font-family:Times New Roman; margin-top:0pt; font-variant:normal; margin-left:0pt; text-indent:0in; widows:2; font-style:normal; font-weight:normal; text-decoration:none; color:000000; line-height:1.0; text-align:left; margin-bottom:0pt; text-position:normal; margin-right:0pt; bgcolor:transparent; font-size:12pt; font-stretch:normal"/>
+</styles>
+<pagesize pagetype="A4" orientation="portrait" width="210.000000" height="297.000000" units="mm" page-scale="1.000000"/>
+<section xid="1">
+<p style="Normal" xid="2" props="text-align:left; dom-dir:ltr">[sakura]</p>
+<p style="Normal" xid="3" props="text-align:left; dom-dir:ltr">forecolor=#c0c0c0</p>
+<p style="Normal" xid="4" props="text-align:left; dom-dir:ltr">backcolor=#000000</p>
+<p style="Normal" xid="5" props="text-align:left; dom-dir:ltr">opacity_level=85</p>
+<p style="Normal" xid="6" props="text-align:left; dom-dir:ltr">background=none</p>
+<p style="Normal" xid="7" props="text-align:left; dom-dir:ltr">font=monospace 9</p>
+<p style="Normal" xid="8" props="text-align:left; dom-dir:ltr">show_always_first_tab=No</p>
+<p style="Normal" xid="9" props="text-align:left; dom-dir:ltr">scrollbar=false</p>
+<p style="Normal" xid="10" props="text-align:left; dom-dir:ltr">resize_grip=false</p>
+<p style="Normal" xid="11" props="text-align:left; dom-dir:ltr">closebutton=true</p>
+<p style="Normal" xid="12" props="text-align:left; dom-dir:ltr">tabs_on_bottom=false</p>
+<p style="Normal" xid="13" props="text-align:left; dom-dir:ltr">less_questions=false</p>
+<p style="Normal" xid="14" props="text-align:left; dom-dir:ltr">audible_bell=Yes</p>
+<p style="Normal" xid="15" props="text-align:left; dom-dir:ltr">visible_bell=No</p>
+<p style="Normal" xid="16" props="text-align:left; dom-dir:ltr">blinking_cursor=No</p>
+<p style="Normal" xid="17" props="text-align:left; dom-dir:ltr">cursor_type=VTE_CURSOR_SHAPE_BLOCK</p>
+<p style="Normal" xid="18" props="text-align:left; dom-dir:ltr">word_chars=-A-Za-z0-9,./?%&amp;#_~</p>
+<p style="Normal" xid="19" props="text-align:left; dom-dir:ltr">palette=linux</p>
+<p style="Normal" xid="20" props="text-align:left; dom-dir:ltr">add_tab_accelerator=5</p>
+<p style="Normal" xid="21" props="text-align:left; dom-dir:ltr">del_tab_accelerator=5</p>
+<p style="Normal" xid="22" props="text-align:left; dom-dir:ltr">switch_tab_accelerator=8</p>
+<p style="Normal" xid="23" props="text-align:left; dom-dir:ltr">move_tab_accelerator=5</p>
+<p style="Normal" xid="24" props="text-align:left; dom-dir:ltr">copy_accelerator=5</p>
+<p style="Normal" xid="25" props="text-align:left; dom-dir:ltr">scrollbar_accelerator=5</p>
+<p style="Normal" xid="26" props="text-align:left; dom-dir:ltr">open_url_accelerator=5</p>
+<p style="Normal" xid="27" props="text-align:left; dom-dir:ltr">font_size_accelerator=4</p>
+<p style="Normal" xid="28" props="text-align:left; dom-dir:ltr">set_tab_name_accelerator=5</p>
+<p style="Normal" xid="29" props="text-align:left; dom-dir:ltr">add_tab_key=T</p>
+<p style="Normal" xid="30" props="text-align:left; dom-dir:ltr">del_tab_key=W</p>
+<p style="Normal" xid="31" props="text-align:left; dom-dir:ltr">prev_tab_key=Left</p>
+<p style="Normal" xid="32" props="text-align:left; dom-dir:ltr">next_tab_key=Right</p>
+<p style="Normal" xid="33" props="text-align:left; dom-dir:ltr">copy_key=C</p>
+<p style="Normal" xid="34" props="text-align:left; dom-dir:ltr">paste_key=V</p>
+<p style="Normal" xid="35" props="text-align:left; dom-dir:ltr">scrollbar_key=S</p>
+<p style="Normal" xid="36" props="text-align:left; dom-dir:ltr">set_tab_name_key=N</p>
+<p style="Normal" xid="37" props="text-align:left; dom-dir:ltr">fullscreen_key=F11</p>
+<p style="Normal" xid="38" props="text-align:left; dom-dir:ltr">icon_file=terminal-tango.svg</p>
+<p style="Normal" xid="39"></p>
+</section>
+</abiword>

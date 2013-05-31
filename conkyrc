@@ -1,73 +1,57 @@
-################ STUFF... ################################################################################
-##   This .conkyrc is designed for 1024x768 resolution, so you may have to tweak it with other resolutions.
-##   Save this file as .conkyrc in your home folder.
-##   Font used ProFontWindows and can be found from http://www.dafont.com/secret-code.font
-##   Green and grey blocks that are used in the desktop thing, save them in place you want and change the paths.
-##
-##   Weather:
-##   conky_rss.sh is modded version of this script:
-##   http://ubuntuforums.org/showpost.php?p=6993782&postcount=6354
-##   Remember to make it excutable.
-##   Feeds are from http://www.rssweather.com, choose your location and add the right rss feed
-##   in conky_weather file like this:
-##   ${execi 3600 ~/bin/conky/conky_rss.sh "http://www.rssweather.com/bin/conky/rss.php" 1 1 }
-##   change also the path to where you have saved your conky_rss.sh file.
-
-
+##############################################
+# Settings
+##############################################
 background yes
-
 use_xft yes
-xftfont LiberationMono:size=9
-xftalpha 1
-update_interval 1
-
-
+xftfont silkscreen:size=6.44
+xftalpha 0.8
+#font snap-7
+text_buffer_size 2048
+update_interval 0.50
 total_run_times 0
-
-    own_window yes
-    own_window_transparent no
-    own_window_type normal
-    own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
-    #own_window_argb_visual yes
-    double_buffer yes
-	no_buffers yes
-#text_buffer_size 1920
-#minimum_size 100 1200
-minimum_size 1920 5
-maximum_width 1080 
-
-draw_shades no
+own_window yes
+own_window_transparent yes
+own_window_type dock
+own_window_colour 262729
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+double_buffer yes
+draw_shades yes
 draw_outline no
 draw_borders no
 draw_graph_borders no
-stippled_borders 0
-border_inner_margin 2
-border_width 0
-
-default_color EE4772
-#default_color 1693A5
-default_shade_color 2D2D2D
+default_color 789922
+default_shade_color black
 default_outline_color white
-own_window_colour 222222
-
-alignment top_left
-#alignment top_right
-#alignment bottom_left
-#alignment bottom_right
-#alignment bottom_middle
-#alignment none
-
-gap_x 415
-gap_y 15
-
+gap_x 4
+gap_y 4
 no_buffers yes
-
 uppercase no
-
 cpu_avg_samples 2
+override_utf8_locale no
+temperature_unit celsius
+alignment top_middle
 
-override_utf8_locale yes
+### CHANGES ###
+
+alignment bl ## top_center
 
 
+minimum_size 1910 1
+
+#to change MiB and GiB to M and G
+short_units no
+# % valses at 2 decimals - goto acts on the decimal point
+pad_percents 2
+# limit the length of the output
+top_name_width 2
+
+# uptime to uptime_short (no seconds)
+
+##############################################
+# Output
+##############################################
 TEXT
-${color e2e2e2}Uptime:${color} ${uptime_short}${color} ${color e2e2e2}Storage: ${color}${fs_used /home} / ${fs_size /home} ${fs_used_perc /home}% ${color e2e2e2} CPU: ${color}${cpu cpu1}% @ ${hwmon temp 1}°C ${color e2e2e2} Mem: ${color}${font}${mem} / ${memmax}  ${memperc}%   ${alignr}${color e2e2e2}${wireless_essid wlan0}${color} ${wireless_link_qual_perc wlan0}% -- ${gw_ip} ${color e2e2e2} Local IP: ${color}${addr wlan0} ${color e2e2e2} External IP: ${color}${execi 600 wget -q -O - checkip.dyndns.org | sed -e 's/[^[:digit:]\|.]//g'}  
+${alignc}${color f92672}Debian Wheezy ${color} | ${color beed5f}Machine:${color d3d3d3} $nodename | ${color fd971f} Uptime:${color d3d3d3} $uptime ${color}| ${color ff669d}Kernel: ${color d3d3d3} $kernel | ${color 9e6ffe}Cpu: ${color e3e3e3}${cpu cpu0}% | ${color 00CBEE}Ram: ${color d3d3d3}${mem}/${memmax} | ${color}System: ${color e0e0e0}${font}${fs_used /} | ${color}Home: ${color e1e1e1}${font}${fs_used /home}/${fs_size /home} ${color D45959} Down: ${color e0e0e0} ${downspeed wlan0} | ${color D45959} Up: ${color} ${color e0e0e0} ${upspeed wlan0} | ${color G767676} Title: ${color e0e0e0}${mpd_title} | ${color a6e22e}Network: ${color e0e0e0} ${wireless_essid wlan0} ${wireless_mode wlan0} ${wireless_link_qual_perc wlan0}% ${font}
+#${rss http://ws.audioscrobbler.com/1.0/user/Viconomia/recenttracks.rss 1 item_titles 5 }
+#${alignc} ${color d3d3d3} CPU: Usage:${cpu cpu0}% | HDD: System ${fs_used /}/${fs_size /} | Home:${fs_used /home}/${fs_size /home} | RAM: $mem/$memmax | Weather: ${execi 300 /home/jon/scripts/weather.sh 48183} | Title: ${mpd_title} | Artist: ${mpd_artist} | Album: ${mpd_album} | Time: ${mpd_elapsed}/${mpd_length}
+#By Vicophine (A.K.A Viconomia)

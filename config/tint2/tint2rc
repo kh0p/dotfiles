@@ -1,0 +1,87 @@
+#---------------------------------------------
+# TINT2 CONFIG FILE
+#---------------------------------------------
+
+#---------------------------------------------
+# BACKGROUND AND BORDER
+#---------------------------------------------
+
+rounded = 0
+border_width = 1
+background_color = #2B1A1A 0
+border_color = #ffffff 40
+
+rounded = 0
+border_width = 1
+background_color = #2B1A1A 80
+#background_color = #719B69 50
+border_color = #8ED22C 40
+
+
+rounded = 1
+border_width = 0
+#background_color = #A6B384 20
+background_color = #2B1A1A 30
+border_color = #8ED22C 
+
+
+#---------------------------------------------
+# PANEL
+#---------------------------------------------
+panel_monitor = all
+#panel_mode = single_monitor
+panel_position = bottom center
+panel_size = 75% 20
+panel_margin = 0 5
+panel_padding = 1 1 1 1
+font_shadow = 0
+panel_background_id = 3
+
+
+#---------------------------------------------
+# TASKS
+#---------------------------------------------
+task_icon = 0
+task_text = 1
+task_width = 100
+task_centered = 1
+task_margin = 1
+task_padding = 2
+task_icon_size = 8
+task_font = monospace 7
+task_font_color = #8ED22C 50
+task_active_font_color = #8ED22C 80
+task_background_id = 1
+task_active_background_id = 2
+
+
+#---------------------------------------------
+# TASKBAR
+#---------------------------------------------
+taskbar_mode = single_monitor
+taskbar_padding = 0 0 5
+taskbar_background_id = 0
+
+#---------------------------------------------
+# SYSTRAYBAR
+#---------------------------------------------
+systray_padding = 0 0 0
+systray_background_id = 0
+#---------------------------------------------
+# CLOCK
+#---------------------------------------------
+time1_format = %H:%M / %a %d %b
+#time1_font = Museo 8
+time1_font = AvantGardeLTMedium 8
+#time2_format = %A %d %B
+#time2_font = Monospace 6
+clock_font_color = #8ED22C 90
+clock_padding = 3 0
+
+#---------------------------------------------
+# MOUSE ACTION ON TASK
+#---------------------------------------------
+mouse_middle = none
+mouse_right = close
+mouse_scroll_up = toggle
+mouse_scroll_down = iconify
