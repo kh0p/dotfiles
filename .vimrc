@@ -292,6 +292,16 @@ set nocompatible
         " Fast build of vimwiki HTML
         map <F4> :VimwikiAll2HTML<cr>
 
+        " Navigating tabs
+        nnoremap th  :tabfirst<CR>
+        nnoremap tj  :tabnext<CR>
+        nnoremap tk  :tabprev<CR>
+        nnoremap tl  :tablast<CR>
+        nnoremap tt  :tabedit<Space>
+        nnoremap tn  :tabnext<Space>
+        nnoremap tm  :tabm<Space>
+        nnoremap td  :tabclose<CR>
+
         " Buffers, preferred over tabs now with bufferline. Buggy?
         nnoremap gn :bNext<CR>
         nnoremap gN :bprevious<CR>
@@ -393,6 +403,7 @@ set nocompatible
             
             Plug 'junegunn/seoul256.vim'
             Plug 'junegunn/goyo.vim'
+            Plug 'junegunn/vim-easy-align'
 
             call plug#end()
         """ }}}
