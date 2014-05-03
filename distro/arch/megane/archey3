@@ -1,4 +1,0 @@
-[core]
-color = green
-align = center 
-display_modules = distro(), uname(n), uname(r), uptime(), wm(), packages(), mpd(albums), ram(), fs(/), fs(/home)

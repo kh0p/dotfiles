@@ -1,0 +1,29 @@
+[user]
+	name = 楊文里
+	email = yutsuro@gmail.com
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    ui = true
+[core]
+    editor = /usr/local/bin/vim 
+[include]
+    path = .gitconfig.local
+[alias]
+    d = diff
+    e = !git diff | vim
+    aa = add -A
+    au = add --update
+    ac = !git add -p; git commit
+    st = status -sb
+    br = branch
+    ci = commit -v -m
+    co = checkout
+    cp = cherry-pick
+    cp-nx = cherry-pick --no-commit -x
+    # From `Everyday Git Aliases` on http://code.joejag.com
+    lg = log --pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+    standup = log --pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cD) %C(bold blue)<%an>%Creset' --since yesterday --author defm03
+[rerere]
+    enabled = true
