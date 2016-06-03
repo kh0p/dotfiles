@@ -11,7 +11,7 @@ task :init do
 end
 
 desc "Builds everything up. Use it if you are making first build"
-task :build_all => [:init, build:awesome] do
+task :build_all => [:init, build:awesome, build:vim] do
   puts "Building has been finished."
 end
 
@@ -38,5 +38,20 @@ namespace :build do
     puts "Moving new rc.lua file into awesome config directory"
     system "mv awesome rc.lua"
     system "cp rc.lua " + config + "/awesome/rc.lua"
+  end
+  
+  desc "Doing things necessary to make vimrc work"
+  task :vim do
+    puts "Moving .vimirc to home (or prefered) directory"
+    system "cp .vimrc " + home + "/.vimrc"
+    
+    unless File.exist?(home + "/vim/autoload/plug.vim")
+      puts "Downloading plug.vim and putting it into autoload"
+      system "curl -fLo " + home + "/.vim/autoload/plug.vim --create-dirs \
+              http://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
+    end 
+    
+    puts "Starting up vim just to install packages!"
+    system "vim"
   end
 end
