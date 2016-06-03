@@ -1,7 +1,7 @@
-" Author:       楊文里 (@defm03)
-" Homepage:     defm03.github.io              
-" Source:       https://github.com/defm03/dotfiles/.vimrc
-" ForkedFrom:   https://github.com/timss/vimconf    
+" Author:       楊文里 (@kh0p)
+" Homepage:     kh0p.github.io
+" Source:       https://github.com/kh0p/dotfiles/.vimrc
+" ForkedFrom:   https://github.com/timss/vimconf
 "---------------------------------------------------------
 
 " vimconf is not vi-compatible
@@ -383,7 +383,7 @@ set nocompatible
                 call cursor(l, c)
             endfunction
 
-            autocmd FileType c,cpp,css,html,perl,python,sh autocmd 
+            autocmd FileType c,cpp,css,html,perl,python,sh autocmd
                         \BufWritePre <buffer> :call <SID>StripTrailingWhitespace()
         """ }}}
     """ }}}
@@ -397,10 +397,10 @@ set nocompatible
         " Syntastic - toggle error list. Probably should be toggleable.
         noremap <silent><leader>lo :Errors<CR>
         noremap <silent><leader>lc :lcl<CR>
-    
+
         """ {{{ With plugin manager: vim-plug
             call plug#begin('~/.vim/plugged')
-            
+
             Plug 'junegunn/seoul256.vim'
             Plug 'junegunn/goyo.vim'
             Plug 'junegunn/vim-easy-align'
@@ -566,7 +566,7 @@ set nocompatible
         \ $HOME . "/.vimrc.last", $HOME . "/.vimrc.bundles",
         \ $HOME . "/Projects/octopress/source/_posts"
         \ ]
-    let g:startify_custom_header = [ 
+    let g:startify_custom_header = [
         \ '                     .',
         \ '                   ....8ob.',
         \ '                o88888888888b.',
@@ -580,7 +580,7 @@ set nocompatible
         \ '       P" 888888888 """""       `""o._.oP ',
         \ '          8888888888.',
         \ '          88888888888',
-        \ '          "888888888 8b.', 
+        \ '          "888888888 8b.',
         \ '           "88888888b  """"3booooooo..',
         \ '            "888888888888888b         "b.',
         \ '             "8888888888888888888888b    "8',
