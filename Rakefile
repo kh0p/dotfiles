@@ -54,4 +54,34 @@ namespace :build do
     puts "Starting up vim just to install packages!"
     system "vim"
   end
+  
+  desc "Copying dotfiles to the home directory"
+  task :dots do
+    dots=['.Xdefaults', '.gitconfig', '.bashrc']
+  end
+end
+
+desc "Installation of ls++ (colorized ls on steroids)"
+task :lsplusplus do
+  puts "Running `cpan Term::ExtendedColor`"
+  system "cpan Term::ExtendedColor"
+
+  unless File.exist?(home + "/Repo/ls--") and File.directory?(home + "/Repo/ls--")
+    puts "Cloning ls++ repository from github"
+    system "git clone https://github.com/trapd00r/ls--.git"
+  end
+
+  puts "Entering the ls++ directory"
+  system "cd " + home + "/Repo/ls--"
+
+  puts "Executing Perl Makefile"
+  system "perl Makefile.PL"
+
+  puts "Final make of the ls++ (Requires root password)"
+  system "make && su -c 'make install'"
+  
+  unless File.exist?(home + "/.ls++.conf")
+    puts "Copying the ls++.conf file to home directory"
+    system "cp ls++.conf " + home + "/.ls++.conf"
+  end
 end
