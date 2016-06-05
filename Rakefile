@@ -11,7 +11,7 @@ task :init do
 end
 
 desc "Builds everything up. Use it if you are making first build"
-task :build_all => [:init, build:awesome, build:vim] do
+task :build_all => [:init, build:dots, build:awesome, build:vim] do
   puts "Building has been finished."
 end
 
@@ -58,6 +58,11 @@ namespace :build do
   desc "Copying dotfiles to the home directory"
   task :dots do
     dots=['.Xdefaults', '.gitconfig', '.bashrc']
+    dots.each do |dot|
+      puts "Moving " + dot + " to home directory"
+      system "cp " + dot + " " + home + "/" + dot
+    end
+    puts "All dot files are copied"
   end
 end
 
