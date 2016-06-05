@@ -29,3 +29,5 @@ export PATH=$PATH:$GEM_HOME/bin
 
 alias ls='ls --color'
 export LS_COLORS
+
+alias ll="ls++"

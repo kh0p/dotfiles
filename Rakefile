@@ -1,8 +1,8 @@
 task default: %[update]
 
 # Settings 
-home    = "/home/USERNAME"            # your home directory
-config  = "/home/USERNAME/.config"    # directory for your config files
+home    = "/home/pyoon"            # your home directory
+config  = "/home/pyoon/.config"    # directory for your config files
 
 
 desc "Makes necessary initial actions."
@@ -11,7 +11,7 @@ task :init do
 end
 
 desc "Builds everything up. Use it if you are making first build"
-task :build_all => [:init, build:dots, build:awesome, build:vim] do
+task :build_all => [:init, :build] do
   puts "Building has been finished."
 end
 
