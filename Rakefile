@@ -1,4 +1,6 @@
-task default: %[update]
+task default: %[build_all]
+
+require 'fileutils'
 
 # Settings 
 home    = "/home/pyoon"            # your home directory
@@ -63,6 +65,23 @@ namespace :build do
       system "cp " + dot + " " + home + "/" + dot
     end
     puts "All dot files are copied"
+  end
+end
+
+desc "Namespace for different kinds of updates"
+namespace :update do
+  task :git do
+    "Brings remote refs up to date"
+    system "git remote update"
+  end
+  task :file do
+    to_compare = ['.Xdefaults', '.gitconfig', '.bashrc']
+    to_compare.each do |file|
+      "Checking for change of file and changes original file if there is any"
+        if FileUtils.compare_file(file, home+file) 
+          "Updating " + file + " file"
+          system "cp "+file+" "+home+file 
+    end
   end
 end
 
